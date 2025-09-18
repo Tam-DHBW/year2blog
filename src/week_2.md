@@ -1,6 +1,6 @@
-##Blog Entry 2 – Team and Technology: jAilbreak
+# Blog Entry 2 – Team and Technology: jAilbreak
 
-#Team
+## Team
 
 | <img width="20%" height="20%" alt="image" src="https://github.com/user-attachments/assets/9a1a4476-c533-4d52-84b9-f81cc0ea6fac" /> | <img width="20%" height="20%" alt="image" src="https://github.com/user-attachments/assets/750a6594-bf53-4a60-9e12-658bbd45c970" />| 
 |-------------------------------------------------------------------------|------------------------------------------------------------------|
