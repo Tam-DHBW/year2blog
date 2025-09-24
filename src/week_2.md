@@ -4,16 +4,12 @@ Hey everyone!
 
 In this second blog post, we’re excited to share the **high-level architecture** of *jAilbreak* and the **tech stack** we chose to build it.
 
-welcome our team: 
-
-## Team
+## Welcome our team:
 
 | <img width="20%" height="20%" alt="image" src="https://github.com/user-attachments/assets/9a1a4476-c533-4d52-84b9-f81cc0ea6fac" /> | <img width="20%" height="20%" alt="image" src="https://github.com/user-attachments/assets/750a6594-bf53-4a60-9e12-658bbd45c970" />| 
 |-------------------------------------------------------------------------|------------------------------------------------------------------|
 |Bogdan                                                                   |Tamino                                                            | 
 |FrontEnd Master and AWS god                                              |Rust Enjoyer and BackEnd superhero                                |
-
-<bt></br>
 
 
 ## 🛠 High-Level Architecture  
@@ -37,8 +33,6 @@ Here’s how everything fits together:
 
 6. **DynamoDB + Safety Middleware**  
    Game state, player sessions, and analytics data are stored in **Amazon DynamoDB**. A safety filter middleware ensures that all AI outputs are moderated for appropriate content and fair gameplay.  
-
----
 
 ## 🛠 Tech Stack  
 
