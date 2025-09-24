@@ -5,7 +5,6 @@ Hey everyone!
 In this second blog post, we’re excited to share the **high-level architecture** of *jAilbreak* and the **tech stack** we chose to build it.
 
 welcome our team: 
----
 
 ## Team
 
@@ -15,10 +14,6 @@ welcome our team:
 |FrontEnd Master and AWS god                                              |Rust Enjoyer and BackEnd superhero                                |
 
 <bt></br>
-
-
-# Blog Entry 2 – Team and Technology: jAilbreak
-
 
 
 ## 🛠 High-Level Architecture  
