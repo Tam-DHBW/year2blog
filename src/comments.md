@@ -3,7 +3,7 @@
         data-repo-id="R_kgDOPr31bg"
         data-category="Blog comments"
         data-category-id="DIC_kwDOPr31bs4CvIb5"
-        data-mapping="title"
+        data-mapping="pathname"
         data-strict="0"
         data-reactions-enabled="1"
         data-emit-metadata="0"
