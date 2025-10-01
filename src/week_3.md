@@ -19,7 +19,7 @@ To date, we have about 500 lines of terraform code managing ~30 cloud resources 
 
 # Frontend
 Check it out youself: https://d1ec4fqqusaq2g.cloudfront.net
-|<img width="660" height="516" alt="image" src="https://github.com/user-attachments/assets/a300d0b4-c218-4bf4-823c-e8727d611ae2" />|<img width="928" height="700" alt="image" src="https://github.com/user-attachments/assets/c07c3968-991f-4287-8e72-f4c7c549cc69" />|
+|<img alt="image" src="https://github.com/user-attachments/assets/dd80667f-c37c-4965-81b6-af48375ddd9e" />|<img alt="image" src="https://github.com/user-attachments/assets/75bfcce9-b90a-49c0-8e81-68a8a604c22d" />|
 |---|---|
 
 The frontend is a Single-Page-Application built using React.
