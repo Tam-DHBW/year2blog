@@ -73,3 +73,5 @@ We then route requests according to the URL path:
 Cloudfront also provides us with caching and spans many geographic regions, ensuring our users have a great experience from anywhere in the world!
 
 Thanks for reading and see you next week!
+
+{{ #include comments.md }}
