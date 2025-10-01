@@ -72,6 +72,11 @@ We then route requests according to the URL path:
 
 Cloudfront also provides us with caching and spans many geographic regions, ensuring our users have a great experience from anywhere in the world!
 
+# Use case diagram
+Here is our use case diagram we were supposed to create this week:
+
+<img width="882" height="401" alt="UCD drawio" src="https://github.com/user-attachments/assets/dc496e95-269b-4d11-ae85-2afdfebfc9ce" />
+
 Thanks for reading and see you next week!
 
 {{ #include comments.md }}
