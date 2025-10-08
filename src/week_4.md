@@ -43,8 +43,7 @@ Once configured, these settings are saved to DynamoDB and deployed via AWS Lambd
 This use case defines the system management workflow, ensuring new challenges can be created and maintained without code changes — keeping the game scalable and flexible.
 
 
-
-🔍 Reflections & Next Steps
+Reflections & Next Steps
 
 With both use cases established, we’ve effectively modeled the two sides of our system:
 	•	The Player-facing layer, where interaction and gamification happen.
@@ -52,7 +51,7 @@ With both use cases established, we’ve effectively modeled the two sides of ou
 
 These use cases provide a blueprint for our upcoming implementation phase — connecting the UI with backend logic and integrating AWS services like Lambda, DynamoDB, and Bedrock.
 
-
+Here could you read more about two of our usecases 
 
 # 1 First Use-Case Name
 
