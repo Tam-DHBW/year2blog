@@ -197,17 +197,8 @@ Key points:
   
 ### 2.1.1 Activity Diagram
 
-```mermaid
-flowchart TD
-    A[Admin logs in] --> B[Navigate to Admin Dashboard]
-    B --> C[Click 'Create New Simulation']
-    C --> D[Fill Configuration Form]
-    D --> E[Validate Inputs]
-    E --> F[Save Configuration to DynamoDB]
-    F --> G[Deploy Bedrock Prompt Template]
-    G --> H[Show Success Message]
-    H --> I[Simulation Available to Players]
-```
+<img width="410" height="816" alt="image" src="https://github.com/user-attachments/assets/42c0680f-9864-426d-8af2-38b5f2bbe13e" />
+
 ### 2.1.2 Mock-up
 
 <img  width="75%" height="75%" alt="PNG image 2" src="https://github.com/user-attachments/assets/58e27aaa-7400-41a7-af27-2222b2bf3b95" />
