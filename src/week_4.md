@@ -14,7 +14,7 @@ Players must think creatively — crafting clever prompts, reasoning through the
 
 This interaction transforms traditional prompt engineering into a game-like experience, teaching users about AI alignment, content filters, and the nuances of prompt control in a fun, gamified way.
 
-Key Highlights
+### Key Highlights
 	•	Players chat directly with the Gatekeeper (LLM).
 	•	The AI replies in character, enforcing predefined guardrails.
 	•	On successful guessing, the player unlocks the next level or reward.
@@ -26,7 +26,7 @@ This use case defines the player journey — from login to victory — and ensur
 
 ## Use Case 2 – Create and Configure Gatekeeper Simulations
 
-The second use case focuses on the administrative side of jAilbreak. Administrators can create new Gatekeeper scenarios by defining:
+### The second use case focuses on the administrative side of jAilbreak. Administrators can create new Gatekeeper scenarios by defining:
 	•	Persona name and behavior (e.g., “AI Warden”, “The Oracle”),
 	•	Hidden password or goal phrase,
 	•	Guardrail rules and difficulty level,
@@ -34,7 +34,7 @@ The second use case focuses on the administrative side of jAilbreak. Administrat
 
 Once configured, these settings are saved to DynamoDB and deployed via AWS Lambda to Bedrock, creating a ready-to-play simulation accessible to users through the main game interface.
 
-## Key Highlights
+### Key Highlights
 	•	Only authorized admins can create or modify simulations.
 	•	Simulations are dynamically deployed as Bedrock prompt templates.
 	•	Each scenario is versioned and logged for audit and debugging.
@@ -45,7 +45,7 @@ This use case defines the system management workflow, ensuring new challenges ca
 
 Reflections & Next Steps
 
-With both use cases established, we’ve effectively modeled the two sides of our system:
+### With both use cases established, we’ve effectively modeled the two sides of our system:
 	•	The Player-facing layer, where interaction and gamification happen.
 	•	The Admin-facing layer, where simulation logic and difficulty are controlled.
 
@@ -61,7 +61,7 @@ Interact with Gatekeeper (LLM) to Guess Password (Simulation)
 
 A signed-in user can start a chat with an LLM acting as a simulated gatekeeper. The user attempts to discover the (fictional) password for the simulated gate by asking questions, submitting guesses, and requesting hints. The LLM enforces rate limits, provides allowed hints, and records attempts. This use case is intended for training, gamification, or CTF-style environments only.
 
-Key points:
+### Key points:
 	•	The password is fictional and stored in the simulation environment.
 	•	The LLM behaves as the gatekeeper persona and follows content & ethical filters.
 	•	The private solution and audit logs are only visible to authorized admins.
@@ -134,7 +134,7 @@ Feature: Interact with Gatekeeper LLM to guess the hidden password
 
 # 3 Special Requirements
 
--	Simulation-only: System must ensure the challenge uses fictional passwords, not production secrets.
+- Simulation-only: System must ensure the challenge uses fictional passwords, not production secrets.
 - Rate limiting & lockouts: Limit maximum prompt size (e.g., 300 characters).
 - Content filtering: LLM must refuse requests for real-world illicit help and log such attempts.
 - Configurable difficulty: Each level should be configured with a gurad rails.
