@@ -6,7 +6,7 @@ First of all, we now have working authorization for our REST API.
 The existence of users is managed for us by AWS Cognito.
 After creating an account through this service, users are able to obtain a JWT access token from Cognito.
 We have now implemented an authorizer which validates the JWT access token, and forwards the user-ID to our REST API
-<img width="2156" height="1112" alt="image" src="https://github.com/user-attachments/assets/27a1dd01-ffc4-4821-a320-9f006ba70652" />
+<img alt="image" src="https://github.com/user-attachments/assets/27a1dd01-ffc4-4821-a320-9f006ba70652" />
 
 ### LLM Conversations
 Tricking a LLM into giving you the secret password is the crux of our game. No LLM, no game to play.
@@ -28,11 +28,11 @@ We generate these AI agents on-the-fly, allowing us to fully customize their beh
 
 The responses from the AI are already super fast (~1 second), but we can still boost latency in the future
 
-<img width="1510" height="361" alt="image" src="https://github.com/user-attachments/assets/07b804cb-af37-4b05-aa3d-80f7569e8dc7" />
+<img alt="image" src="https://github.com/user-attachments/assets/07b804cb-af37-4b05-aa3d-80f7569e8dc7" />
 
 We even have a quick-and-dirty frontend integration, so you can chat with our admittedly still very dumb gatekeeper right now => [🎮 jAilbreak](https://d1ec4fqqusaq2g.cloudfront.net)
 
-<img width="883" height="658" alt="image" src="https://github.com/user-attachments/assets/d1c0319b-d89d-45f4-921a-7f5e7d82a739" />
+<img alt="image" src="https://github.com/user-attachments/assets/d1c0319b-d89d-45f4-921a-7f5e7d82a739" />
 
 ### Behaviour driven development
 We did the mandatory behaviour driven development using cucumber too of course.
@@ -59,7 +59,7 @@ Then("The search bar exists", async function () {
     await driver.findElement(By.css('form[action="/search"] textarea'))
 })
 ```
-<img width="713" height="142" alt="image" src="https://github.com/user-attachments/assets/933d13dd-c4a4-4a10-90cd-5b271cfaf7b1" />
+<img alt="image" src="https://github.com/user-attachments/assets/933d13dd-c4a4-4a10-90cd-5b271cfaf7b1" />
 
 ---
 ## Thanks for reading and have fun teasing our gatekeeper!
