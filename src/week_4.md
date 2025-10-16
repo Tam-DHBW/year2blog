@@ -280,7 +280,3 @@ DynamoDB and Lambda services must be active and reachable.
 ## 6 Extension Points
 	•	Integration with analytics to measure player performance across simulations.
 	•	Optional export/import of configurations for backup or sharing between environments.
-
-
-
-{{ #include comments.md }}

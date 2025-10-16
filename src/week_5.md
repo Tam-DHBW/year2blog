@@ -63,5 +63,3 @@ Then("The search bar exists", async function () {
 
 ---
 ## Thanks for reading and have fun teasing our gatekeeper!
-
-{{ #include comments.md }}

@@ -28,5 +28,3 @@ We’ve broken the project into several subsystems to keep it manageable:
   3. Create Roles
 
 Stay tuned—we’ll be sharing progress as jAilbreak comes to life! 🚀
-
-{{ #include comments.md }}
