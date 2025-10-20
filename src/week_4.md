@@ -84,7 +84,7 @@ A signed-in user can start a chat with an LLM acting as a simulated gatekeeper. 
   
 ### 2.1.1 Activity Diagram
 
-<img width="100%" height="100%" alt="image" src="https://github.com/user-attachments/assets/0418989c-553f-45c0-a2e4-baa50e7b124c" />
+<img width="1426" height="1328" alt="Use Case Diagram Gatekeeper Simulation Oct 20 2025" src="https://github.com/user-attachments/assets/0b2ba80a-8921-4313-87d8-d08a50b21a10" />
 
 ### 2.1.2 Mock-up
 
@@ -197,7 +197,8 @@ Key points:
   
 ### 2.1.1 Activity Diagram
 
-<img width="410" height="816" alt="image" src="https://github.com/user-attachments/assets/42c0680f-9864-426d-8af2-38b5f2bbe13e" />
+<img width="1269" height="1322" alt="Diagram Export Oct 20 2025" src="https://github.com/user-attachments/assets/6b77555c-bb13-437f-8875-01ad59c30e8f" />
+
 
 ### 2.1.2 Mock-up
 
