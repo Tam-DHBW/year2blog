@@ -219,23 +219,30 @@
                 <div id="content" class="content">
                     <main>
                         {{{ content }}}
-                        
-                        <script src="https://giscus.app/client.js"
-                        data-repo="Tam-DHBW/year2blog"
-                        data-repo-id="R_kgDOPr31bg"
-                        data-category="Blog comments"
-                        data-category-id="DIC_kwDOPr31bs4CvIb5"
-                        data-mapping="pathname"
-                        data-strict="0"
-                        data-reactions-enabled="1"
-                        data-emit-metadata="0"
-                        data-input-position="top"
-                        data-theme="preferred_color_scheme"
-                        data-lang="en"
-                        data-loading="lazy"
-                        crossorigin="anonymous"
-                        async>
-                        </script>
+
+                        <div id="comment-section" style="display: none">
+                          <script>
+                            if (!"{{path}}".startsWith("docs/")) { document.getElementById("comment-section").style = "" }
+                          </script>
+
+                          <script
+                          src="https://giscus.app/client.js"
+                          data-repo="Tam-DHBW/year2blog"
+                          data-repo-id="R_kgDOPr31bg"
+                          data-category="Blog comments"
+                          data-category-id="DIC_kwDOPr31bs4CvIb5"
+                          data-mapping="pathname"
+                          data-strict="0"
+                          data-reactions-enabled="1"
+                          data-emit-metadata="0"
+                          data-input-position="top"
+                          data-theme="preferred_color_scheme"
+                          data-lang="en"
+                          data-loading="lazy"
+                          crossorigin="anonymous"
+                          async>
+                          </script>
+                        </div>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
