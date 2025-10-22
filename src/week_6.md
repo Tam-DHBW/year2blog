@@ -11,6 +11,15 @@ We sucsessfully integrated timetraking in our IDE's by using time tracking plugi
 <img width="100%" height="100%"  alt="Screenshot 2025-10-22 at 10 37 49" src="https://github.com/user-attachments/assets/f391e698-490e-42c4-8f45-54b303cda664" />
 <img width="100%" height="100%"  alt="Screenshot 2025-10-22 at 10 37 12" src="https://github.com/user-attachments/assets/cec03a52-cae8-4f5e-90cf-83197fb8cc7c" />
 
+Than we as well integrated the issue tracker (by litteraly migrating from VSC to IntelliJ)
+
+<img width="100%" height="100%" alt="Screenshot 2025-10-22 at 12 00 25" src="https://github.com/user-attachments/assets/211ada33-7bdd-46cb-80df-52299c072916" />
+<img width="100%" height="100%" alt="Screenshot 2025-10-22 at 11 57 33" src="https://github.com/user-attachments/assets/0abd950a-0efa-445d-aa65-fab0d0cefd80" />
+
+And we as well added a GitHub integration for easier commit tracking 
+
+<img width="100%" height="100%" alt="Screenshot 2025-10-22 at 12 06 24" src="https://github.com/user-attachments/assets/b1d20b01-c27b-4948-ae8c-774c878f17fb" />
+
 
 ## YouTrack Reports
 First of all, if you want to take a look at how our project is progressing, [you can view our scrum board here](https://dhbw-newstudy.youtrack.cloud/agiles/108-175/current).
