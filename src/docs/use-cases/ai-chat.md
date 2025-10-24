@@ -48,10 +48,10 @@ n/a
 A cheap LLM is sufficient for purposes of the game, as long as engaging responses are generated.
 
 ## Wireframe
-![AI chat wireframe](/assets/ai-chat-wireframe.drawio.svg)
+![AI chat wireframe](../../assets/ai-chat-wireframe.drawio.svg)
 
 ## Activity diagram
-![AI chat activity diagram](/assets/ai-chat-activity.svg)
+![AI chat activity diagram](../../assets/ai-chat-activity.svg)
 
 ## Gherkin narrative
 > TODO
