@@ -1,33 +1,57 @@
 # AI gatekeeper chat
 
 ## Description
+The user shall be able to chat with a Large Language Model,
+roleplaying as a "gatekeeper",
+which guards a password to continue to the next level.
+
+The model should be talkative and engage in conversations for an enjoyable user experience.
+When asked to give away the password,
+the model should deny simply hand it out,
+requiring the player to trick the model into providing the password.
 
 ## Basic Flow of Events
-+ <First>
+- Player sends prompt to gatekeeper
+- System adds game instructions and password to prompt
+- System invokes gatekeeper Large Language Model with modified prompt
+- Return gatekeeper response to player
+- Display response
 
 ## Alternative Flows
-### <Area of functionality>
-#### <First alternative flow>
-+ <First>
+- Before returning response to player
+    - Level has higher difficulty
+        - Apply additional guardrails to response
+        - Cancel response if guardrail was triggered
 
 ## Subflows
-### <First subflow>
-+ <First>
+- Apply additional guardrails to response
+    - Arbitrary combination of:
+        - Detect password string in response
+        - Prohibited topic detected
+        - Second LLM determines response gives away password
+        - ...
 
 ## Preconditions
-- <First>
+- The player is logged in
+- The player has unlocked the selected level
+- The player is not being rate limited
 
 ## Postconditions
-- <First>
+n/a
 
 ## Extension points
-- <First>
+- Prompt pre-validation
+    - Verify prompt to not be password related before passing it to the LLM
+
 
 ## Additional information
+A cheap LLM is sufficient for purposes of the game, as long as engaging responses are generated.
 
 ## Wireframe
+![AI chat wireframe](/assets/ai-chat-wireframe.drawio.svg)
 
 ## Activity diagram
+![AI chat activity diagram](/assets/ai-chat-activity.svg)
 
 ## Gherkin narrative
 > TODO
