@@ -1,9 +1,5 @@
-# Use cases
+# Use case
 
-<!--the UCD is correct (UML with 5 components: actors, system boundary,  UC, association, dependencies AND scope marked in grey or color)-->
-<!--each bubble in UCD contains a “verb”-->
-<!--SCOPE of 5 Use cases should be colored (plan to December delivery)-->
-<!---->
 <!--at least 2 Use Cases are uploaded to git in documentation (separate from code) format is MD-->
 <!--(LOGIN/OUT does not count – nor Logout by the way)-->
 <!--UC contains: screenshot/Mockup/Wireframe and activity diagram,-->
@@ -31,3 +27,10 @@
 <!--Proof that you used autocompletion on step definitions  within your IDE-->
 <!---->
 <!--(the location of .feature text in UC document is variable. I  personally like it when the text is right next to the activity diagram  so that you can read the text for the flow that you see in the diagram.  But you can do this as you wish. See what your peer reviewers say about  how they like it.)-->
+
+## Use Case Diagram
+<!--the UCD is correct (UML with 5 components: actors, system boundary,  UC, association, dependencies AND scope marked in grey or color)-->
+<!--each bubble in UCD contains a “verb”-->
+<!--SCOPE of 5 Use cases should be colored (plan to December delivery)-->
+
+> TODO

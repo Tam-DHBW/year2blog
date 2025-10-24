@@ -17,7 +17,10 @@
 - [Tech stack](./docs/tech-stack.md)
 - [RUP roles](./docs/rup-roles.md)
 - [Software requirements specification](./docs/srs.md)
-- [Use cases](./docs/use-cases.md)
+- [Use cases](./docs/use-cases/README.md)
+    - [AI gatekeeper chat](./docs/use-cases/ai-chat.md)
+    - [Level progression](./docs/use-cases/level-progression.md)
+    - [Level selection](./docs/use-cases/level-selection.md)
 
 ---
 
