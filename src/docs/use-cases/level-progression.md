@@ -67,7 +67,7 @@ TO DO
 
 ## Activity diagram
 
-<img width="100%" height="100%" alt="PNG image" src="https://github.com/user-attachments/assets/1fde60ba-43ae-452e-9c31-d781411cd97d" />
+<img width="100%" height="100%" alt="PNG image" src="https://github.com/user-attachments/assets/f80b46e8-9d05-43b6-ba97-0b04573ef127" />
 
 ## Gherkin narrative
 > TODO
