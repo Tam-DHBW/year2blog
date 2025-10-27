@@ -63,6 +63,8 @@ Difficulty scaling is achieved via:
 
 ## 10. Wireframe
 
+TO DO
+
 ## Activity diagram
 
 <img width="100%" height="100%" alt="PNG image" src="https://github.com/user-attachments/assets/1fde60ba-43ae-452e-9c31-d781411cd97d" />
