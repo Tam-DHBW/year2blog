@@ -42,6 +42,11 @@ The backend is completely serverless and built on top of AWS services:
 	•	The main backend logic is handled by Axum, a lightweight and high-performance Rust web framework running inside a Lambda function.
 Axum defines the API routes and handler functions, which process user requests — for example, retrieving level data or saving player progress.
 
+### Cucumber
+We also have cucumber running, though for now not yet on our website since it requires authentication to do anything
+<img alt="image" src="https://github.com/user-attachments/assets/235bdf1f-0751-4561-8857-5d10935baa7c" />
+
+
 ### 6 MVC
 
 ### 6.1 MVC High level diagram 
