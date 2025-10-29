@@ -46,4 +46,31 @@ Axum defines the API routes and handler functions, which process user requests â
 
 ### 5. The RUP architecture document is filled out and online.
 
-You can find it here
+You can find it here:
+
+- [Project description](./docs/project-description.md)
+- [Tech stack](./docs/tech-stack.md)
+- [Architecture](./docs/architecture.md)
+- [Conventions](./docs/conventions.md)
+- [RUP roles](./docs/rup-roles.md)
+- [Software requirements specification](./docs/srs.md)
+- [Use cases](./docs/use-cases/README.md)
+    - [AI gatekeeper chat](./docs/use-cases/ai-chat.md)
+    - [Level progression](./docs/use-cases/level-progression.md)
+    - [Level selection](./docs/use-cases/level-selection.md)
+
+
+### 6 MVC
+
+### 6.1 MVC High level diagram 
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/cf8b5754-01eb-4e7a-b66e-9d2e1ea9a982" width="50%" height="50%">
+</p>
+	 
+### 6.2 MVC class diagram 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8f121393-b083-45c8-89d4-a1284eaef255" width="75%%" height="75%">
+</p>
+
+
