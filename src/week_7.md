@@ -2,23 +2,22 @@
 
 ### 1. Describe your chosen framework
 
-For this project, I chose Axum, a modern and lightweight web framework for Rust. Axum focuses on type safety, performance, and modularity, leveraging Rust’s powerful async ecosystem (built on top of Tokio).
+For this project's backend, we chose Axum, a modern and lightweight web framework for Rust. Axum focuses on type safety, performance, and modularity, making use of Rust’s powerful async ecosystem.
 
-It follows a router-based design, where each route maps to a specific handler function. Handlers are typically asynchronous and use Rust’s strong typing system to ensure safe request and response handling at compile time.
+It follows a router-based design, where each route maps to a specific handler function.
 
-Axum emphasizes composition rather than monolithic design — middleware, extractors, and layers can be flexibly combined to structure complex applications. It integrates well with Tower, enabling reusable components for logging, error handling, or authentication.
-
-Unlike traditional frameworks like Django or Rails, Axum gives developers fine-grained control over the HTTP layer, making it particularly suitable for building high-performance APIs and microservices rather than large, template-driven web apps.
+Since Axum is simple yet powerful, it provides us with a lot of flexibility and customizability for deploying to AWS.
 
 ### 2. Does your framework generate simple CRUD (Create, Read, Update, Delete), and are you using this?
+No Axum does not include built-in CRUD generation tools.
 
-Axum does not include built-in CRUD generation tools. Unlike frameworks such as Laravel or Rails that automatically scaffold models and controllers, Axum requires developers to manually define routes, request handlers, and database logic.
+This is however now a problem for our use case,
+since most of the time DynamoDB queries are custom-tailored for the use case.
+
+Only a single table exists in our application where CRUD generation could even be considered.
 
 ### 3. Screencast of our demo 
-
-<a href="https://drive.google.com/file/d/1QY9wxeYr1UjtRr0hpPu5w5Y3N2YBs7J3/view?usp=sharing" target="_blank">
-  <img width=100% height=100% alt="Screenshot 2025-10-29 at 15 33 18" src="https://github.com/user-attachments/assets/3c197975-1a4d-428e-b45f-010d5c46b511" />
-</a>
+<iframe src="https://drive.google.com/file/d/1QY9wxeYr1UjtRr0hpPu5w5Y3N2YBs7J3/preview" width="640" height="480" allow="autoplay"></iframe>
 
 ### 4. Architectural UML Diagram
 
@@ -42,23 +41,6 @@ The backend is completely serverless and built on top of AWS services:
 	•	Authorizer Lambda verifies JWT tokens issued by AWS Cognito. It makes sure only authenticated users can access protected routes and logs each request.
 	•	The main backend logic is handled by Axum, a lightweight and high-performance Rust web framework running inside a Lambda function.
 Axum defines the API routes and handler functions, which process user requests — for example, retrieving level data or saving player progress.
-
-
-### 5. The RUP architecture document is filled out and online.
-
-You can find it here:
-
-- [Project description](./docs/project-description.md)
-- [Tech stack](./docs/tech-stack.md)
-- [Architecture](./docs/architecture.md)
-- [Conventions](./docs/conventions.md)
-- [RUP roles](./docs/rup-roles.md)
-- [Software requirements specification](./docs/srs.md)
-- [Use cases](./docs/use-cases/README.md)
-    - [AI gatekeeper chat](./docs/use-cases/ai-chat.md)
-    - [Level progression](./docs/use-cases/level-progression.md)
-    - [Level selection](./docs/use-cases/level-selection.md)
-
 
 ### 6 MVC
 
