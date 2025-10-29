@@ -1,4 +1,4 @@
-# Blog Entry 5 – IDE Integration and Reports
+# Blog Entry 6 – IDE Integration and Reports
 
 Hello everyone!
 This week we sadly have not made any development progress on our project.
