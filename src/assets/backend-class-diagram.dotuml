@@ -1,0 +1,333 @@
+ClassDiagram {
+    // Handler Functions
+    class AdminGetComponentsHandler {
+        public user: "AuthorizedAdmin"
+        public state: "ExtractState"
+    }
+
+    class Component {
+        public id: "ComponentID"
+        public text: "String"
+    }
+
+    class GetComponentsResponse {
+        public components: "Vec[Component]"
+    }
+
+    class GetComponentsError {
+        public QueryComponents(BoxError)
+    }
+
+    class AdminAddComponentHandler {
+        public user: "AuthorizedAdmin"
+        public state: "ExtractState"
+        public request: "AddComponentRequest"
+    }
+
+    class AddComponentRequest {
+        public predecessor: "Option[ComponentID]"
+    }
+
+    class AddComponentResponse {
+        public component_id: "ComponentID"
+    }
+
+    class AddComponentError {
+        public PredecessorDoesNotExist
+        public QueryAdjacent(BoxError)
+        public ComponentCreation(BoxError)
+    }
+
+    class AdminModifyComponentHandler {
+        public user: "AuthorizedAdmin"
+        public state: "ExtractState"
+        public component_id: "ComponentID"
+        public request: "ModifyComponentRequest"
+    }
+
+    class ModifyComponentRequest {
+        public new_text: "String"
+    }
+
+    class ModifyComponentError {
+        public DoesNotExist
+        public UpdateComponent(BoxError)
+    }
+
+    class AdminDeleteComponentHandler {
+        public user: "AuthorizedAdmin"
+        public state: "ExtractState"
+        public component_id: "ComponentID"
+    }
+
+    class DeleteComponentError {
+        public ComponentDeletion(BoxError)
+    }
+
+    class AdminMoveComponentHandler {
+        public user: "AuthorizedAdmin"
+        public state: "ExtractState"
+        public component_id: "ComponentID"
+        public request: "MoveComponentRequest"
+    }
+
+    class MoveComponentRequest {
+        public predecessor: "Option[ComponentID]"
+    }
+
+    class MoveComponentError {
+        public DoesNotExist
+        public PredecessorDoesNotExist
+        public QueryAdjacent(BoxError)
+        public UpdatePosition(BoxError)
+    }
+
+    class GetLevelsHandler {
+        public state: "ExtractState"
+    }
+
+    class LevelResponse {
+        public id: "LevelID"
+        public name: "String"
+        public next: "Vec[LevelID]"
+    }
+
+    class GetLevelsResponse {
+        public levels: "Vec[Level_Response]"
+    }
+
+    class GetLevelsError {
+        public QueryLevels(BoxError)
+    }
+
+    class AdminGetLevelsHandler {
+        public user: "AuthorizedAdmin"
+        public state: "ExtractState"
+    }
+
+    class AdminGetLevelsResponse {
+        public levels: "Vec[AdminLevel]"
+    }
+
+    class AdminGetLevelsError {
+        public QueryLevels(BoxError)
+    }
+
+    class AdminCreateLevelHandler {
+        public user: "AuthorizedAdmin"
+        public state: "ExtractState"
+        public request: "CreateLevelRequest"
+    }
+
+    class CreateLevelRequest {
+        public name: "String"
+    }
+
+    class CreateLevelResponse {
+        public level: "AdminLevel"
+    }
+
+    class CreateLevelError {
+        public LevelCreation(BoxError)
+    }
+
+    class AdminModifyLevelHandler {
+        public user: "AuthorizedAdmin"
+        public state: "ExtractState"
+        public level_id: "LevelID"
+        public request: "ModifyLevelRequest"
+    }
+
+    class ModifyLevelRequest {
+        public name: "Option[String]"
+        public prompt_components: "Option[Vec[ComponentID]]"
+        public next: "Option[Vec[LevelID]]"
+    }
+
+    class ModifyLevelError {
+        public DoesNotExist
+        public LevelModification(BoxError)
+    }
+
+    class AdminDeleteLevelHandler {
+        public user: "AuthorizedAdmin"
+        public state: "ExtractState"
+        public level_id: "LevelID"
+    }
+
+    class DeleteLevelError {
+        public LevelDeletion(BoxError)
+    }
+
+    class ChatSessionHandler {
+        public user: "AuthorizedUser"
+        public state: "ExtractState"
+        public level_id: "LevelID"
+        public session_id: "String"
+        public request: "ChatRequest"
+    }
+
+    class ChatRequest {
+        public message: "String"
+    }
+
+    class ChatReply {
+        public reply: "String"
+    }
+
+    class ChatError {
+        public LevelDoesNotExist
+        public GetLevel(BoxError)
+        public QueryPromptComponents(BoxError)
+        public BedrockInvocationFailed(BoxError)
+        public IllegalModelResponse
+    }
+
+    // Core Infrastructure
+    class InnerState {
+        public sdk_config: "SdkConfig"
+        public bedrockagent: "aws_sdk_bedrockagentruntime::Client"
+        public dynamo: "aws_sdk_dynamodb::Client"
+        public cognito: "aws_sdk_cognitoidentityprovider::Client"
+    }
+
+    class AuthorizedUser {
+        private sub: "Sub"
+        private _extra: "E"
+        public sub(): "ref str"
+    }
+
+    class AssertAdmin
+
+    class AuthorizationError {
+        public NotAuthorized
+        public NotAnAdmin
+        public AdminAssertion(BoxError)
+    }
+
+    class ApiErrorResponse {
+        public r#type: "ref'static str"
+        public message: "String"
+    }
+
+    // Database Models
+    class PromptComponent {
+        public component_id: "ComponentID"
+        public template_id: "TemplateID"
+        public ordering: "String"
+        public text: "String"
+        public create_sort_key(client, predecessor): "Result[Option[String], BoxError]"
+        public create_sort_key_between(predecessor, successor): "String"
+    }
+
+    class Level {
+        public level_id: "LevelID"
+        public name: "String"
+        public prompt_components: "Vec[ComponentID]"
+        public next: "Vec[LevelID]"
+    }
+
+    class Counter {
+        public name: "String"
+        public count: "u64"
+        public increment(client, counter): "ApiResult[u64]"
+    }
+
+    class CounterError {
+        public "CounterIncrementFailed{counter: ref 'static str, err: BoxError}"
+    }
+
+    class TemplateID {
+        public 0: "String"
+    }
+
+    class ComponentID {
+        public 0: "u64"
+    }
+
+    class LevelID {
+        public 0: "u64"
+    }
+
+
+    // Relationships
+    PromptComponent -d-> ComponentID
+    PromptComponent -d-> TemplateID
+    Level -d-> LevelID
+    Level -d-> ComponentID
+    AuthorizedUser -d-> AssertAdmin
+    AuthorizedUser -d-> AuthorizationError
+    Counter -d-> CounterError
+
+    AdminGetComponentsHandler -d-> AuthorizedUser
+    AdminGetComponentsHandler -d-> InnerState
+    AdminGetComponentsHandler -d-> GetComponentsResponse
+    AdminGetComponentsHandler -d-> GetComponentsError
+    GetComponentsResponse -d-> Component
+
+    AdminAddComponentHandler -d-> AuthorizedUser 
+    AdminAddComponentHandler -d-> InnerState
+    AdminAddComponentHandler -d-> AddComponentRequest
+    AdminAddComponentHandler -d-> AddComponentResponse
+    AdminAddComponentHandler -d-> AddComponentError
+    AddComponentRequest -d-> ComponentID
+    AddComponentResponse -d-> ComponentID
+
+    AdminModifyComponentHandler -d-> AuthorizedUser
+    AdminModifyComponentHandler -d-> InnerState
+    AdminModifyComponentHandler -d-> ModifyComponentRequest
+    AdminModifyComponentHandler -d-> ModifyComponentError
+    AdminModifyComponentHandler -d-> ComponentID
+
+    AdminDeleteComponentHandler -d-> AuthorizedUser
+    AdminDeleteComponentHandler -d-> InnerState
+    AdminDeleteComponentHandler -d-> DeleteComponentError
+    AdminDeleteComponentHandler -d-> ComponentID
+
+    AdminMoveComponentHandler -d-> AuthorizedUser
+    AdminMoveComponentHandler -d-> InnerState
+    AdminMoveComponentHandler -d-> MoveComponentRequest
+    AdminMoveComponentHandler -d-> MoveComponentError
+    AdminMoveComponentHandler -d-> ComponentID
+    MoveComponentRequest -d-> ComponentID
+
+    GetLevelsHandler -d-> InnerState
+    GetLevelsHandler -d-> GetLevelsResponse
+    GetLevelsHandler -d-> GetLevelsError
+    GetLevelsResponse -d-> LevelResponse
+    LevelResponse -d-> LevelID
+
+    AdminGetLevelsHandler -d-> AuthorizedUser
+    AdminGetLevelsHandler -d-> InnerState
+    AdminGetLevelsHandler -d-> AdminGetLevelsResponse
+    AdminGetLevelsHandler -d-> AdminGetLevelsError
+
+    AdminCreateLevelHandler -d-> AuthorizedUser
+    AdminCreateLevelHandler -d-> InnerState
+    AdminCreateLevelHandler -d-> CreateLevelRequest
+    AdminCreateLevelHandler -d-> CreateLevelResponse
+    AdminCreateLevelHandler -d-> CreateLevelError
+    CreateLevelResponse -d-> Level
+
+    AdminModifyLevelHandler -d-> AuthorizedUser
+    AdminModifyLevelHandler -d-> InnerState
+    AdminModifyLevelHandler -d-> ModifyLevelRequest
+    AdminModifyLevelHandler -d-> ModifyLevelError
+    AdminModifyLevelHandler -d-> LevelID
+    ModifyLevelRequest -d-> ComponentID
+    ModifyLevelRequest -d-> LevelID
+
+    AdminDeleteLevelHandler -d-> AuthorizedUser
+    AdminDeleteLevelHandler -d-> InnerState
+    AdminDeleteLevelHandler -d-> DeleteLevelError
+    AdminDeleteLevelHandler -d-> LevelID
+
+    ChatSessionHandler -d-> AuthorizedUser
+    ChatSessionHandler -d-> InnerState
+    ChatSessionHandler -d-> ChatRequest
+    ChatSessionHandler -d-> ChatReply
+    ChatSessionHandler -d-> ChatError
+    ChatSessionHandler -d-> LevelID
+
+}
+
