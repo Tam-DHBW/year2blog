@@ -1,33 +1,39 @@
 # Level selection
 
 ## Description
+The user shall be able to select between the different available levels
 
 ## Basic Flow of Events
-+ <First>
++ User clicks on level
++ Verify whether level is unlocked
++ Clear chat history
++ Update current level info
+
 
 ## Alternative Flows
-### <Area of functionality>
-#### <First alternative flow>
-+ <First>
+- Level is not unlocked
+    - Abort
 
 ## Subflows
-### <First subflow>
-+ <First>
+n/a
 
 ## Preconditions
-- <First>
+- The player is logged in
 
 ## Postconditions
-- <First>
+- The desired level is selected
 
 ## Extension points
-- <First>
+n/a
 
 ## Additional information
+n/a
 
 ## Wireframe
+![Level selection wireframe](../../assets/level-selection-wireframe.drawio.svg)
 
 ## Activity diagram
+![Level selection activity diagram](../../assets/level-selection-activity.svg)
 
 ## Gherkin narrative
 > TODO
