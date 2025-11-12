@@ -60,7 +60,7 @@ For the game jAilbreak
 <!--A brief description of the software application that the SRS applies to; the feature or other subsystem grouping; what Use-Case model(s) it is associated with; and anything else that is affected or influenced by this document._-->
 
 This specification defines the entirety of the jAilbreak project, in particular the features listed under the "*Use cases*" chapter
-[![Use case diagram](../../assets/use-case-diagram.svg)](./use-cases/)
+[![Use case diagram](./../assets/use-case-diagram.svg)](./use-cases/)
 
 ## 1.3 Definitions, Acronyms and Abbreviations
 
