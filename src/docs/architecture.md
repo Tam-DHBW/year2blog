@@ -7,3 +7,5 @@
 ### Backend
 [![Class diagram](../assets/backend-class-diagram.svg)](../assets/backend-class-diagram.svg)
 
+## Database tables
+[![Database tables](../assets/database-tables.svg)](../assets/database-tables.svg)
