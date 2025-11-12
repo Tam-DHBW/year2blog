@@ -33,4 +33,5 @@
 <!--each bubble in UCD contains a “verb”-->
 <!--SCOPE of 5 Use cases should be colored (plan to December delivery)-->
 
-> TODO
+
+[![Use case diagram](../../assets/use-case-diagram.svg)](../../assets/use-case-diagram.svg)

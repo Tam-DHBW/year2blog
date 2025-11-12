@@ -1,0 +1,83 @@
+direction: right
+
+classes: {
+  actor: {
+    shape: c4-person
+  }
+  dashed: {
+    style.stroke-dash: 5
+  }
+}
+
+Legend: {
+  Scope.style.fill: pink
+}
+
+U: "" {
+  style.opacity: 0
+  User: {
+    "".class: actor
+  }
+  Admin: {
+    "".class: actor
+  }
+}
+
+S: System {
+  SI: Sign in
+  SO: Sign out
+  GL: Get levels
+  SL: Select level
+  CG: Chat with gatekeeper
+  VP: Validate password
+  PN: Progress to next level
+
+  GLB: Get Leaderboard
+  ULB: Update leaderboard
+  BLB: Ban from leaderboard
+
+  ML: Manage levels
+  (GL -> ML).class: dashed
+  (SL -> ML).class: dashed
+  (CG -> ML).class: dashed
+  (VP -> ML).class: dashed
+
+  CL: Create level
+  DL: Delete level
+  SN: Set level name
+  SP: Set level password
+  SC: Set level prompt components
+  (ML -> CL).class: dashed
+  (ML -> DL).class: dashed
+  (ML -> SN).class: dashed
+  (ML -> SP).class: dashed
+  (ML -> SC).class: dashed
+
+  (VP -> ULB).class: dashed
+
+  SI.style.fill: pink
+  SO.style.fill: pink
+  GL.style.fill: pink
+  SL.style.fill: pink
+  CG.style.fill: pink
+  VP.style.fill: pink
+  PN.style.fill: pink
+  ML.style.fill: pink
+  CL.style.fill: pink
+  DL.style.fill: pink
+  SN.style.fill: pink
+  SP.style.fill: pink
+  SC.style.fill: pink
+}
+U.User -- S.GL
+U.User -- S.SI
+U.User -- S.SL
+U.User -- S.SO
+U.User -- S.CG
+U.User -- S.VP
+U.User -- S.PN
+U.User -- S.GLB
+U.Admin -- S.BLB
+U.Admin -- S.ML
+U.Admin -- S.GL
+
