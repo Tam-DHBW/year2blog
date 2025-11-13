@@ -62,8 +62,7 @@ Difficulty scaling is achieved via:
 
 
 ## 10. Wireframe
-
-TO DO
+![Level progression wireframe](../../assets/level-selection-wireframe.drawio.svg)
 
 ## Activity diagram
 
