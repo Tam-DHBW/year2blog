@@ -25,6 +25,7 @@
     - [AI gatekeeper chat](./docs/use-cases/ai-chat.md)
     - [Level progression](./docs/use-cases/level-progression.md)
     - [Level selection](./docs/use-cases/level-selection.md)
+- [YouTrack](./docs/youtrack.md)
 
 ---
 
