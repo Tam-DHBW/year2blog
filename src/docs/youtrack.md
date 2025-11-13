@@ -1,5 +1,7 @@
 # YouTrack
 
+[View the YouTrack project here!](https://dhbw-newstudy.youtrack.cloud/projects/JAI)
+
 ## Scrum board
 ![Scrum board](../assets/youtrack/scrum.png)
 ## Timesheet
