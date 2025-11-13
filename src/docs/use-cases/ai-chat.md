@@ -54,5 +54,7 @@ A cheap LLM is sufficient for purposes of the game, as long as engaging response
 ![AI chat activity diagram](../../assets/ai-chat-activity.svg)
 
 ## Gherkin narrative
-> TODO
-<iframe src="https://emgithub.com/iframe.html?target=https://github.com/cucumber/gherkin/blob/main/testdata/good/extra_table_content.feature&style=default&type=code&showFullPath=on&fetchFromJsDelivr=on" frameborder="0" scrolling="no" style="width:100%; height:290px;" allow="clipboard-write"></iframe>
+<iframe src="https://emgithub.com/iframe.html?target=
+    https://github.com/Tam-DHBW/jAilbreak/blob/main/frontend/features/chat.feature
+    &style=default&type=code&showFullPath=on&fetchFromJsDelivr=on"
+    frameborder="0" scrolling="no" style="width:100%; height:290px;" allow="clipboard-write"></iframe>
