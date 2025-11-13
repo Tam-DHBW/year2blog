@@ -16,10 +16,10 @@
 
 - [Project description](./docs/project-description.md)
 - [Tech stack](./docs/tech-stack.md)
-- [Architecture](./docs/architecture.md)
-- [Conventions](./docs/conventions.md)
 - [RUP roles](./docs/rup-roles.md)
 - [Software requirements specification](./docs/srs.md)
+- [Architecture](./docs/architecture.md)
+- [Conventions](./docs/conventions.md)
 - [Use cases](./docs/use-cases/README.md)
     - [Legend](./docs/use-cases/legend.md)    
     - [AI gatekeeper chat](./docs/use-cases/ai-chat.md)
