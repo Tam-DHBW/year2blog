@@ -202,6 +202,7 @@ It shall, however, be able to scale to zero, to avoid large costs during the ear
 ## 3.5 Supportability
 
 <!--This section indicates any requirements that will enhance the supportability or maintainability of the system being built, including coding standards, naming conventions, class libraries, maintenance access, maintenance utilities._-->
+The application shall be built in a modular and maintainable manner.
 
 ### 3.5.1 `<Supportability Requirement One>`
 
