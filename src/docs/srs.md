@@ -204,10 +204,6 @@ It shall, however, be able to scale to zero, to avoid large costs during the ear
 <!--This section indicates any requirements that will enhance the supportability or maintainability of the system being built, including coding standards, naming conventions, class libraries, maintenance access, maintenance utilities._-->
 The application shall be built in a modular and maintainable manner.
 
-### 3.5.1 `<Supportability Requirement One>`
-
-<!--The requirement description goes here._-->
-
 ## 3.6 Design Constraints
 
 <!--This section should indicate any design constraints on the system being built. Design constraints represent design decisions that have been mandated and must be adhered to. Examples include software languages, software process requirements, prescribed use of development tools, architectural and design constraints, purchased components, class libraries, etc._-->
