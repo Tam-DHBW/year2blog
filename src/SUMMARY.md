@@ -2,6 +2,7 @@
 
 # Blog posts
 
+<!-- ANCHOR: semester1blogs -->
 - [Week 1](./week_1.md)
 - [Week 2](./week_2.md)
 - [Week 3](./week_3.md)
@@ -10,10 +11,13 @@
 - [Week 6](./week_6.md)
 - [Week 7](./week_7.md)
 - [Week 8](./week_8.md)
+- [Week 11 - Midterm](./week_11.md)
+<!-- ANCHOR_END: semester1blogs -->
 ---
 
 # Documentation
 
+<!-- ANCHOR: docs -->
 - [Project description](./docs/project-description.md)
 - [Tech stack](./docs/tech-stack.md)
 - [RUP roles](./docs/rup-roles.md)
@@ -27,6 +31,7 @@
     - [Level selection](./docs/use-cases/level-selection.md)
 - [Testing](./docs/testing.md)
 - [YouTrack](./docs/youtrack.md)
+<!-- ANCHOR_END: docs -->
 
 ---
 
