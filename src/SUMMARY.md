@@ -11,6 +11,7 @@
 - [Week 6](./week_6.md)
 - [Week 7](./week_7.md)
 - [Week 8](./week_8.md)
+- [Week 9](./week_9.md)
 - [Week 11 - Midterm](./week_11.md)
 <!-- ANCHOR_END: semester1blogs -->
 ---
