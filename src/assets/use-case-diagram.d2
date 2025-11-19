@@ -6,6 +6,10 @@ classes: {
   }
   dashed: {
     style.stroke-dash: 5
+    label: "<<include>>"
+  }
+  uc: {
+    shape: oval
   }
 }
 
@@ -24,7 +28,8 @@ U: "" {
 }
 
 S: System {
-  SI: Sign in
+  *.class: uc
+  SI: Sign in)
   SO: Sign out
   GL: Get levels
   SL: Select level
