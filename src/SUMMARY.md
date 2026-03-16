@@ -1,7 +1,6 @@
 # Summary
 
-# Blog posts
-
+# Blog posts semester 1
 <!-- ANCHOR: semester1blogs -->
 - [Week 1](./week_1.md)
 - [Week 2](./week_2.md)
@@ -14,6 +13,12 @@
 - [Week 9](./week_9.md)
 - [Week 11 - Midterm](./week_11.md)
 <!-- ANCHOR_END: semester1blogs -->
+
+# Blog posts semester 2
+<!-- ANCHOR: semester2blogs -->
+- [Week 1](./week_2_1.md)
+<!-- ANCHOR_END: semester2blogs -->
+
 ---
 
 # Documentation
