@@ -17,6 +17,7 @@
 # Blog posts semester 2
 <!-- ANCHOR: semester2blogs -->
 - [Week 1](./week_2_1.md)
+- [Week 2](./week_2_2.md)
 <!-- ANCHOR_END: semester2blogs -->
 
 ---
