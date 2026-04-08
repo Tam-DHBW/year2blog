@@ -247,6 +247,8 @@ fn sort_key_between() {
 }
 ```
 
+<img alt="test passing screenshot" src="https://github.com/user-attachments/assets/2e7a0601-14d2-4a09-b1f5-9faee49ea4b6" />
+
 ## Summary
 
 We now have two categories of backend tests:
