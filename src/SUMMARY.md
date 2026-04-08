@@ -30,7 +30,7 @@
 - [Project description](./docs/project-description.md)
 - [Tech stack](./docs/tech-stack.md)
 - [RUP roles](./docs/rup-roles.md)
-- [RUP Testing](./docs/tests-rup)
+- [RUP Testing](./docs/tests-rup.md)
 - [Software requirements specification](./docs/srs.md)
 - [Architecture](./docs/architecture.md)
 - [Conventions](./docs/conventions.md)
