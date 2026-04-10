@@ -1,6 +1,6 @@
 # How to Load a VRM Model in a React Website
 
-<img width="3120" height="1704" alt="PNG image" src="https://github.com/user-attachments/assets/bda71620-a577-4fab-8f66-d558ca9fb806" />
+<img width=100% height=100% alt="PNG image" src="https://github.com/user-attachments/assets/bda71620-a577-4fab-8f66-d558ca9fb806" />
 
 ## What you need
 
