@@ -1,4 +1,4 @@
-# How I (Bogdan) Learned to Refactor Legacy Java Code (Without Breaking Everything)
+# How I ([@Bogdan1323234](https://github.com/Bogdan1323234/)) Learned to Refactor Legacy Java Code (Without Breaking Everything)
 
 I'm not a Java developer. And I just had to get that out of the way. Here's what I did, step by step.
 
@@ -112,3 +112,43 @@ It's also great for bigger refactorings where the scope is less obvious. My proj
 
 The spec becomes a living document. You can reference it, share it with teammates, and use it to track progress. It's refactoring with a map instead of wandering through the code hoping you end up somewhere good. And as a cherry on top of a pie you can add ALL of your documentation as reference for Kiro just by adding a documentatio folder.
 And if you want to check the repo out: here you go: https://github.com/Bogdan1323234/Refactoring-by-Fowler
+
+# Refactoring done by [@Tam-DHBW](https://github.com/Tam-DHBW/)
+
+## What is refactoring
+First of all, i read the first chapter of the refactoring book, to familiarize myself with the types of refactors.
+
+## Setting up the sample project
+After the first chapter was fully read, i felt ready to dive into the codebase, and see what it does.
+As a template, i used the [https://github.com/IB-KA/refactoring](https://github.com/IB-KA/refactoring) repository, so i dont have to create all the code myself
+
+### Getting to a proper repository state
+Since the tempalte repository already contains a bunch of refactors, i first had to revert the changes.
+
+For this i used a simple `git reset --hard 433b04451a7a6a2b7d9ecbe9bc56180701be0503` to reset the current branch and working directory to a commit before any refactors were applied.
+
+## Setting up gradle
+The template project included libraries like junit, however no build system configuration was provided.
+I decided to go with my favourite JVM build system: Gradle. It is powerful, flexible, and easy to use if you are familiar with it.
+
+[I initialized the gradle project, included JUnit, and moved the source code to the appropriate directories](https://github.com/Tam-DHBW/refactor/commit/cbed21749ae01d54d2efb88d012bc6b1089fecb5)
+
+## Refactoring
+Here are 3 of the refactors i have done in the project:
+
+### First refactor
+I moved the `amountFor` method from the customer class to the Rental class, where it actually belongs:
+[de511a7615dae97c5412e99ea457be799c232dbb](https://github.com/Tam-DHBW/refactor/commit/de511a7615dae97c5412e99ea457be799c232dbb)
+
+### Second refactor
+Then i inlined an unnecessary local variable, which was very weirdly initialized:
+[2307ecff526f6c148e18b6acadd80d9acd14a1b5](https://github.com/Tam-DHBW/refactor/commit/2307ecff526f6c148e18b6acadd80d9acd14a1b5)
+
+### Third refactor
+At last i factored out calculations for pricing into classes, which extend an abstract class:
+[2d8899622e163da7cca337c3f546065b6deaef86](https://github.com/Tam-DHBW/refactor/commit/2d8899622e163da7cca337c3f546065b6deaef86)
+
+
+---
+
+Thats all from us this week! See you soon
