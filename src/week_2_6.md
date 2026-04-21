@@ -25,8 +25,7 @@ Things that didn't go as well as we'd hoped:
 - **Requirements** — we could've been clearer about what exactly we were building from the start. Some features were a bit vague.
 - **Behaviour Driven Development** — getting Cucumber.js + Puppeteer to work properly was more painful than expected. The tooling didn't always cooperate.
 - **Accurately entering stuff into YouTrack** — we weren't great at keeping our project management tool up to date. Tasks got done but weren't always tracked.
-- **Unable to store user data in DynamoDB** — we ran into issues with storing user-specific data. DynamoDB's data model took some getting used to.
-
+- **Unable to store user data in DynamoDB** — we ran into issues with storing user-specific data due to the legal limitations by AWS 
 ## Actions — What We'll Do Better Next Time
 
 - **Proper YouTrack tracking** — actually keep the board updated so we know where things stand, or just not use it at all 
