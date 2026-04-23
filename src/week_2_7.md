@@ -44,13 +44,13 @@ This is much nicer than:
 
   ```java
   Car myCar = new Car();
-    // Currently we have uninitialized fields
+  // Currently we have uninitialized fields
   myCar.setBrand("BMW");
   myCar.setHorsepower(320);
   myCar.setSeats(4);
   ```
 
-  Another benefit of the builder is, that the data can be validated when calling `.build`.
+Another benefit of the builder is, that the data can be validated when calling `.build`.
 
 ## How to build your Builder
 Now that we know how to *use* a builder, let's look at how to *implement* one.
