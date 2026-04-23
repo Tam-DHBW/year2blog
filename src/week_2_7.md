@@ -2,22 +2,23 @@
 
 Hello everyone!
 
-Today I want to present the [**Builder Design Dattern**](https://en.wikipedia.org/wiki/Builder_pattern) to you.
-We make heavy use of this pattern in our backend codebase, which is why we think it it important for you to know too!
+Today I want to present the [**Builder Design Pattern**](https://en.wikipedia.org/wiki/Builder_pattern) to you.
+We make heavy use of this pattern in our backend codebase, which is why we think it is important for you to know too!
 
 ## What is a Builder
-A builder is used to construct complex objects, which often have many configerable attributes.
+A builder is used to construct complex objects, which often have many configurable attributes.
 Using a builder allows setting these attributes one at a time, or keep the default value, in a very ergonomic manner.
 
-## Whats's it look like?
+## What's it look like?
 Visually represented, this is how a Builder works:
-![builder pattern visualization](./assets/builder-pattern.svg)
+
+![builder pattern visualization](./assets/builder-pattern.png)
 
 You set each attribute individually (`brand`, `horsepower`, `seats`), or leave the default (`abs`).
 
 Code-wise, using the same builder would look like this:
 ```java
-Car myCar = new CarBuilder()
+Car myCar = new Car.Builder()
     .setBrand("BMW")
     .setHorsepower(320)
     .setSeats(4)
@@ -39,7 +40,7 @@ This is much nicer than:
   )
   ```
 
-- Creating a class in an innegal state and manually setting the attributes.
+- Creating a class in an illegal state and manually setting the attributes.
 
   ```java
   Car myCar = new Car();
@@ -50,6 +51,69 @@ This is much nicer than:
   ```
 
   Another benefit of the builder is, that the data can be validated when calling `.build`.
+
+## How to build your Builder
+Now that we know how to *use* a builder, let's look at how to *implement* one.
+Sticking with our `Car` example:
+
+```java
+public class Car {
+    private String brand;
+    private int horsepower;
+    private int seats;
+    private boolean abs;
+
+    private Car() {}
+
+    public static class Builder {
+        private String brand = null;
+        private Integer horsepower = null;
+        private int seats = 5;
+        private boolean abs = true;
+
+        public Builder setBrand(String brand) {
+            this.brand = brand;
+            return this;
+        }
+
+        public Builder setHorsepower(int horsepower) {
+            this.horsepower = horsepower;
+            return this;
+        }
+
+        public Builder setSeats(int seats) {
+            this.seats = seats;
+            return this;
+        }
+
+        public Builder setAbs(boolean abs) {
+            this.abs = abs;
+            return this;
+        }
+
+        public Car build() {
+            if (brand == null) {
+                throw new IllegalArgumentException("brand is required");
+            }
+            if (horsepower <= 0) {
+                throw new IllegalArgumentException("horsepower is required");
+            }
+            Car car = new Car();
+            car.brand = brand;
+            car.horsepower = horsepower;
+            car.seats = seats;
+            car.abs = abs;
+            return car;
+        }
+    }
+}
+```
+
+A few things to note:
+- Each setter returns `this`, which is what enables the fluent chaining syntax.
+- The `Car` constructor is **private**. the only way to create a `Car` is through the builder.
+- Default values (like `seats = 5` and `abs = true`) are set in the builder's field declarations.
+- The `build()` method validates required fields (`brand`, `horsepower`) before constructing the object.
 
 ## Real world usage
 Now, theory and toy examples are all fun and games, but lets see how we actually use this pattern in our backend!
@@ -130,4 +194,4 @@ Since we mostly build requests to AWS APIs, the `send` method is the equivalent 
   ```
 
 ## Closing words
-I Hope we managed to convey how awesome the builder pattern is, and got you to consider using it yourself.
+I hope we managed to convey how awesome the builder pattern is, and got you to consider using it yourself.
