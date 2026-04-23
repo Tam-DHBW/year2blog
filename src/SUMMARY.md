@@ -22,6 +22,7 @@
 - [Week 4](./week_2_4.md)
 - [Week 5](./week_2_5.md)
 - [Week 6](./week_2_6.md)
+- [Week 7](./week_2_7.md)
 <!-- ANCHOR_END: semester2blogs -->
 
 ---
