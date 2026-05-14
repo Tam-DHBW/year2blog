@@ -1,25 +1,26 @@
-# Tech stack
+## Tech Stack
 
-<!--choice of technology stack (mind the ratings in #TINF2019-talking-to-you)-->
+### Frontend
 
-## Frontend
-- Javascript
-- React
-- React-Router
-- Vite
-- nes.css
-- AWS Cloudfront
-- AWS S3
+| Layer | Technology |
+|-------|-----------|
+| Language | JavaScript |
+| Framework | React with React Router |
+| Build Tool | Vite |
+| Styling | nes.css |
+| Hosting | AWS S3 + CloudFront |
 
-## Backend
-- AWS Cloudfront
-- AWS Cognito
-- AWS Api Gateway
-- AWS Lambda
-    - Rust
-    - Axum
-    - Tokio
-    - Serde
-- AWS Bedrock Agents
-- AWS DynamoDB
-- AWS CloudWatch Logs
+### Backend
+
+| Layer | Technology |
+|-------|-----------|
+| Language | Rust |
+| Runtime | Tokio |
+| Serialization | Serde |
+| Compute | AWS Lambda (via cargo-lambda) |
+| API | AWS API Gateway |
+| Auth | AWS Cognito |
+| AI | AWS Bedrock Agents |
+| Database | AWS DynamoDB |
+| Logging | AWS CloudWatch Logs |
+| CDN | AWS CloudFront |
