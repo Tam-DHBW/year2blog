@@ -24,6 +24,7 @@
 - [Week 6](./week_2_6.md)
 - [Week 7](./week_2_7.md)
 - [Week 8](./week_2_8.md)
+- [Week 9](./week_2_9.md)
 - [Week 11 - Final Hand-In](./week_2_11_final.md)
 <!-- ANCHOR_END: semester2blogs -->
 
