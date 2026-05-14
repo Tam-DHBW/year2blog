@@ -1,4 +1,4 @@
-# Week 9 - Midterm
+# Week 11 - Midterm
 
 Hello everyone! With this blog post, we conclude our software engineering journey for this semester.
 
