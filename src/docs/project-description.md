@@ -1,4 +1,3 @@
-# Project description
 
 <!--Project-Vision:-->
 <!--Short, precise, understandable explanation-->
@@ -7,11 +6,10 @@
 
 <!-- ANCHOR: desc -->
 
-Our project is a game called 🎮 jAilbreak.
-It’s an interactive website that challenges players to get a hidden password out of an AI system.
-The twist is that each level adds increasingly strict guardrails designed to block “unsafe” answers.
-Players have to use different jailbreaking techniques to bypass these restrictions and succeed in obtaining the password.
+# jAilbreak - How it works?
 
-<!-- ANCHOR_END: desc -->
+An interactive web game that challenges players to extract a hidden password from an AI system. Each level introduces increasingly strict guardrails designed to block "unsafe" answers — players must employ creative jailbreaking techniques to bypass these restrictions and obtain the password.
+
+Players interact with an AI chatbot through a terminal-style interface. The AI is instructed to never reveal its secret password, but each level's defenses are different. Success requires understanding prompt injection, social engineering, and other adversarial techniques to outsmart the system's safety layers.
 
 It does not have any inherent dependencies on specific outside systems, though we are making great use of AWS services.
