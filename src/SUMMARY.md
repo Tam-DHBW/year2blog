@@ -45,7 +45,7 @@
     - [AI gatekeeper chat](./docs/use-cases/ai-chat.md)
     - [Level progression](./docs/use-cases/level-progression.md)
     - [Level selection](./docs/use-cases/level-selection.md)
-- [Testing](./docs/testing.md)
+- [Behaviour Driven Testing](./docs/testing.md)
 - [YouTrack](./docs/youtrack.md)
 - [How to uplodad and animate a VRAM 3D model](./docs/how_to_VRAM_a_model.md)
 <!-- ANCHOR_END: docs -->
