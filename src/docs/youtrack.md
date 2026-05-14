@@ -1,6 +1,7 @@
 # YouTrack
 
 [View the YouTrack project here!](https://dhbw-newstudy.youtrack.cloud/projects/JAI)
+[YouTrack Dashboard](https://dhbw-newstudy.youtrack.cloud/dashboard?id=540-194)
 
 ## Scrum board
 ![Scrum board](../assets/youtrack/scrum.png)
