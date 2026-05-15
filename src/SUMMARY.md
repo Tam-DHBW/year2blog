@@ -47,6 +47,7 @@
     - [Level selection](./docs/use-cases/level-selection.md)
 - [Behaviour Driven Testing](./docs/testing.md)
 - [Risk Management](./docs/risks-management.md)
+- [Automation](./docs/automation.md)
 - [YouTrack](./docs/youtrack.md)
 - [Deploymnet Guide](./docs/deployment-guide.md)
 - [How to uplodad and animate a VRAM 3D model](./docs/how_to_VRAM_a_model.md)
