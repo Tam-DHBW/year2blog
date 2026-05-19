@@ -50,6 +50,7 @@
 - [Automation](./docs/automation.md)
 - [YouTrack](./docs/youtrack.md)
 - [Deploymnet Guide](./docs/deployment-guide.md)
+- [Function Points](./docs/function-points.md)
 - [How to uplodad and animate a VRAM 3D model](./docs/how_to_VRAM_a_model.md)
 <!-- ANCHOR_END: docs -->
 
