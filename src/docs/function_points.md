@@ -97,4 +97,5 @@
 ===> 6.5 FP
 
 To see whether the function points actually correlate with the time we really spent on the usecase, we created a scatterplot:
-![fp-time-plot](./assets/fp-time-plot.svg)
+<img width="1188" height="734" alt="image" src="https://github.com/user-attachments/assets/1eccf89f-1541-4f23-8bbe-4a4dfac6da69" />
+
